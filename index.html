@@ -10,6 +10,12 @@
       select{
         width:200px;
       }
+      #inNumber, #outNumber{
+        width:200px;
+      }
+      input{
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -20,19 +26,30 @@
     </div>
     <div class = "container">
       <div class = "row justify-content-center">
-        <div class="col-md-4 col-sm-6 text-center py-2">
-          <form>
+        <div class="col-md-4 col-sm-6 py-2 text-center">
+          <h5 class="display-5">Currency Name</h5>
+          <form id="getForm">
             <select class="currencyFrom" name="countryFrom">
             </select>
+            <br><br>
+            <h5 class="display-5">Value</h5>
+            <input type="number" id="inNumber">
+            <br><br>
+            <input type = "submit" value = "Convert">
           </form>
         </div>
         <div class="col-md-4 col-sm-6 py-2">
+          <br><br>
           <h4 class="display-5 text-center">TO</h4>
         </div>
         <div class="col-md-4 col-sm-6 text-center py-2">
+          <h5 class="display-5">Currency Name</h5>
           <form>
             <select class="currencyTo" name="countryTo">
             </select>
+            <br><br>
+            <h5 class="display-5">Value</h5>
+            <input type="text" id="outNumber">
           </form>
         </div>
       </div>
