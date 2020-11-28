@@ -16,12 +16,19 @@
       input{
         text-align: center;
       }
+      .center-block {
+        margin: auto;
+        display: block;
+      }
+      h1{
+        font-size: 4vw;
+      }
     </style>
   </head>
   <body>
     <div class = "jumbotron jumbotron-fluid">
       <div class = "container">
-        <h1 class="display-4 text-center">Welcome to JX's Currency Converter!</h1>
+        <h1 class="text-center">Welcome to JX's Currency Converter!</h1>
       </div>
     </div>
     <div class = "container">
@@ -29,27 +36,28 @@
         <div class="col-md-4 col-sm-6 py-2 text-center">
           <h5 class="display-5">Currency Name</h5>
           <form id="getForm">
-            <select class="currencyFrom" name="countryFrom">
+            <select class="currencyFrom btn btn-outline-primary">
             </select>
             <br><br>
             <h5 class="display-5">Value</h5>
-            <input type="number" id="inNumber">
+            <input type="number" id="inNumber" value=0 min=0 class="form-control form-control-lg center-block">
             <br><br>
-            <input type = "submit" value = "Convert">
+            <input type = "submit" value = "Convert" class="btn btn-info">
           </form>
         </div>
         <div class="col-md-4 col-sm-6 py-2">
-          <br><br>
+          <br>
           <h4 class="display-5 text-center">TO</h4>
+          <br>
         </div>
         <div class="col-md-4 col-sm-6 text-center py-2">
           <h5 class="display-5">Currency Name</h5>
           <form>
-            <select class="currencyTo" name="countryTo">
+            <select class="currencyTo btn btn-outline-secondary">
             </select>
             <br><br>
             <h5 class="display-5">Value</h5>
-            <input type="text" id="outNumber">
+            <input type="text" id="outNumber" class="form-control form-control-lg center-block">
           </form>
         </div>
       </div>
